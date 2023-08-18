@@ -57,6 +57,9 @@ h1 {
   text-align: center;
   font-size: 2rem;
 }
+.cont-table {
+  overflow-x: auto;
+}
 .show-table {
   width: 80%;
   border-collapse: collapse;

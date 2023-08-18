@@ -66,7 +66,7 @@ export default class ShowTable extends PureComponent {
     return (
       <>
         <h1>ตารางแสดงผลการระบาดของ โควิด-19 ทั่วโลก</h1>
-        <div style="overflow-x:auto;">
+        <div className="cont-table">
           <table className="show-table">
             <thead>
               <tr>
