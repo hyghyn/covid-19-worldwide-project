@@ -66,28 +66,30 @@ export default class ShowTable extends PureComponent {
     return (
       <>
         <h1>ตารางแสดงผลการระบาดของ โควิด-19 ทั่วโลก</h1>
-        <table className="show-table">
-          <thead>
-            <tr>
-              <th>ยอดรวมผู้ติดเชื้อ</th>
-              <th>ยอดรวมผู้ติดเชื้อ (วันนี้)</th>
-              <th>ยอดรวมผู้เสียชีวิต</th>
-              <th>ยอดรวมผู้เสียชีวิต (วันนี้)</th>
-              <th>ยอดรวมผู้รักษาหาย</th>
-              <th>ยอดรวมผู้รักษาหายจาก (วันนี้)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{this.addDot(cases)} คน</td>
-              <td>{this.addDot(todaycases)} คน</td>
-              <td>{this.addDot(deaths)} คน</td>
-              <td>{this.addDot(todaydeaths)} คน</td>
-              <td>{this.addDot(recovered)} คน</td>
-              <td>{this.addDot(todayrecoverd)} คน</td>
-            </tr>
-          </tbody>
-        </table>
+        <div style="overflow-x:auto;">
+          <table className="show-table">
+            <thead>
+              <tr>
+                <th>ยอดรวมผู้ติดเชื้อ</th>
+                <th>ยอดรวมผู้ติดเชื้อ (วันนี้)</th>
+                <th>ยอดรวมผู้เสียชีวิต</th>
+                <th>ยอดรวมผู้เสียชีวิต (วันนี้)</th>
+                <th>ยอดรวมผู้รักษาหาย</th>
+                <th>ยอดรวมผู้รักษาหายจาก (วันนี้)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{this.addDot(cases)} คน</td>
+                <td>{this.addDot(todaycases)} คน</td>
+                <td>{this.addDot(deaths)} คน</td>
+                <td>{this.addDot(todaydeaths)} คน</td>
+                <td>{this.addDot(recovered)} คน</td>
+                <td>{this.addDot(todayrecoverd)} คน</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </>
     );
   }
